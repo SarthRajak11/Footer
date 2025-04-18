@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centered Footer</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+    }
+
+    footer {
+      background-color: #101010;
+      color: #f9f9f6;
+    }
+
+    .footer_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      background-color: #282729;
+      text-align: center;
+    }
+
+    .footer_section {
+      margin: 20px 0;
+    }
+
+    .footer_section h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      border-bottom: 2px solid #f9f9f6;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .contact p {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+
+    .social_links ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    .social_links li a img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social_links li a img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px #fff;
+    }
+
+    .footer_bottom {
+      text-align: center;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #101010;
+      border-top: 1px solid #444;
+    }
+  </style>
+</head>
+
+<body>
+
+  <footer>
+    <div class="footer_content">
+      <div class="footer_section contact">
+        <h2>Contact</h2>
+        <p>Phone: 8839761950</p>
+        <p>Email: rajak.sarth@gmail.com</p>
+      </div>
+
+      <div class="footer_section social_links">
+        <h2>Follow Us</h2>
+        <ul>
+          <li><a href="#"><img src="linkedin.png" alt="LinkedIn" /></a></li>
+          <li><a href="#"><img src="github.png" alt="GitHub" /></a></li>
+          <li><a href="#"><img src="leetcode.png" alt="LeetCode" /></a></li>
+          <li><a href="#"><img src="Hackerank.png" alt="HackerRank" /></a></li>
+          <li><a href="#"><img src="codechief.png" alt="CodeChef" /></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p>© 2025 www.sarth.com — All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
